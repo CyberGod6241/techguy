@@ -22,7 +22,6 @@ function Contact() {
               required=""
               class="flex-1 bg-[#f2f2f2] border-[1px] border-[#0000001a] rounded-[14px] px-[24px] py-[14px] text-[16px] outline-none focus:ring-2 focus:ring-black transition-all"
               name="name"
-              value=""
             ></input>
             <input
               type="email"
