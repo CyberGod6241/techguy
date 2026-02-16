@@ -12,6 +12,8 @@ import item3 from "./assets/item3.png";
 import item4 from "./assets/item4.png";
 import item5 from "./assets/item5.png";
 import item6 from "./assets/item6.png";
+import item7 from "./assets/item7.png";
+import item8 from "./assets/item8.png";
 
 function Home() {
   const items = [
@@ -24,21 +26,21 @@ function Home() {
     },
     {
       id: 2,
-      image: item2,
+      image: item4,
       title: "The M&M Plate",
       description:
         "A food delivery app that offers a wide variety of cuisines and dishes from local restaurants. Users can browse menus, place orders, and track deliveries in real-time. The app also features user reviews and ratings to help customers make informed dining choices.",
     },
     {
       id: 3,
-      image: item3,
+      image: item7,
       title: "Groove Music App",
       description:
         "A music streaming application that allows users to discover, play, and manage their favorite songs and playlists. The app features a sleek interface with personalized recommendations, offline playback capabilities, and integration with popular music platforms.",
     },
     {
       id: 4,
-      image: item4,
+      image: item8,
       title: "Sign-Bridge",
       description:
         "A web application that helps users create and manage digital signatures for documents. The app provides a secure and user-friendly interface for generating, storing, and applying digital signatures to various file types.",

@@ -1,3 +1,4 @@
+import { ArrowBigRight } from "lucide-react";
 function Projects({ items }) {
   return (
     <>
@@ -27,6 +28,12 @@ function Projects({ items }) {
                 <p className="text-[#5a5a5a] text-[16px] line-clamp-2">
                   {item.description}
                 </p>
+                <button className="mt-5 bg-[#f2f2f2] hover:bg-[#e5e5e5] flex items-center rounded-[14px] px-[24px] py-[14px] text-[16px] font-normal text-black text-start no-underline transition-all duration-500 group">
+                  <span className="flex items-center group-hover:pr-2 font-medium text-[15px] transition-all duration-300">
+                    View Project
+                    <ArrowBigRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
+                  </span>
+                </button>
               </div>
             </div>
           ))}

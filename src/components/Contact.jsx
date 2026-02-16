@@ -1,4 +1,35 @@
+import { useState } from "react";
 function Contact() {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const to = "abdulazeeznaim@gmail.com";
+    const subject = encodeURIComponent(
+      `Contact from ${formData.name || "Website Visitor"}`,
+    );
+    const body = encodeURIComponent(
+      `Name: ${formData.name}\nEmail: ${formData.email}\n\n${formData.message}`,
+    );
+    const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(
+      to,
+    )}&su=${subject}&body=${body}`;
+    window.open(gmailUrl, "_blank");
+    setFormData({ name: "", email: "", message: "" });
+  };
+
   return (
     <div className="w-full max-w-[53rem]  p-6 flex flex-col py-[58px] px-[1.5rem] md:px-[8rem] items-center gap-[25px]">
       <div
@@ -22,37 +53,34 @@ function Contact() {
               required=""
               class="flex-1 bg-[#f2f2f2] border-[1px] border-[#0000001a] rounded-[14px] px-[24px] py-[14px] text-[16px] outline-none focus:ring-2 focus:ring-black transition-all"
               name="name"
+              value={formData.name}
+              onChange={handleChange}
             ></input>
             <input
               type="email"
               placeholder="Email Address"
               required=""
-              class="flex-1 bg-[#f2f2f2] border-[1px] border-[#0000001a] rounded-[14px] px-[24px] py-[14px] text-[16px] outline-none focus:ring-2 focus:ring-black transition-all"
+              className="flex-1 bg-[#f2f2f2] border-[1px] border-[#0000001a] rounded-[14px] px-[24px] py-[14px] text-[16px] outline-none focus:ring-2 focus:ring-black transition-all"
               name="email"
-              value=""
+              value={formData.email}
+              onChange={handleChange}
             ></input>
           </div>
           <textarea
             name="message"
             placeholder="Write your Message"
             required=""
-            class="w-full bg-[#f2f2f2] border-[1px] border-[#0000001a] rounded-[14px] px-[24px] py-[14px] text-[16px] h-[150px] outline-none focus:ring-2 focus:ring-black transition-all resize-none"
+            value={formData.message}
+            onChange={handleChange}
+            className="w-full bg-[#f2f2f2] border-[1px] border-[#0000001a] rounded-[14px] px-[24px] py-[14px] text-[16px] h-[150px] outline-none focus:ring-2 focus:ring-black transition-all resize-none"
           ></textarea>
           <button
             type="submit"
-            class="bg-black relative text-white py-[14px] px-[24px] rounded-[14px] text-[16px] hover:opacity-90 duration-[300ms] transition-all w-full disabled:opacity-70"
+            onClick={handleSubmit}
+            className="bg-black relative text-white py-[14px] px-[24px]
+            rounded-[14px] text-[16px] hover:opacity-90 duration-[300ms]
+            transition-all w-full disabled:opacity-70"
           >
-            {/* <img
-              alt="Doodle"
-              loading="lazy"
-              decoding="async"
-              data-nimg="fill"
-              class="absolute object-cover top-0 left-0 opacity-10"
-              style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
-              sizes="100vw"
-              srcset="/_next/image?url=%2Fdoodle.png&amp;w=640&amp;q=75 640w, /_next/image?url=%2Fdoodle.png&amp;w=750&amp;q=75 750w, /_next/image?url=%2Fdoodle.png&amp;w=828&amp;q=75 828w, /_next/image?url=%2Fdoodle.png&amp;w=1080&amp;q=75 1080w, /_next/image?url=%2Fdoodle.png&amp;w=1200&amp;q=75 1200w, /_next/image?url=%2Fdoodle.png&amp;w=1920&amp;q=75 1920w, /_next/image?url=%2Fdoodle.png&amp;w=2048&amp;q=75 2048w, /_next/image?url=%2Fdoodle.png&amp;w=3840&amp;q=75 3840w"
-              src="/_next/image?url=%2Fdoodle.png&amp;w=3840&amp;q=75"
-            /> */}
             Send Message
           </button>
         </form>
