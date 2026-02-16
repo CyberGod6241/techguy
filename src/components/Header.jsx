@@ -3,6 +3,7 @@ import { House } from "lucide-react";
 import { Github } from "lucide-react";
 import { Facebook } from "lucide-react";
 import XFillIcon from "../assets/Xlogo";
+
 function Header() {
   return (
     <header className="mt-2.5 md:mt-5.5 fixed left-0 right-0 flex justify-center items-center p-4 z-50">

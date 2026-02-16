@@ -1,15 +1,12 @@
 import { Dot } from "lucide-react";
 import TextType from "../assets/TextType";
+import Picture from "../assets/Picture.png";
 
 function Profile() {
   return (
     <div className="w-full max-w-[53rem] p-6 flex flex-col pt-[150px] md:pt-[188px] pb-[2rem] md:pb-[3rem] px-[1.5rem] md:px-[8rem] items-start gap-[25px]">
       <div className="max-w-30 mb-3.5">
-        <img
-          src="./src/assets/Picture.png"
-          alt="My Image"
-          className="rounded-full"
-        />
+        <img src={Picture} alt="My Image" className="rounded-full" />
       </div>
       <div className="flex flex-col gap-3 mb-3.5">
         <p className="font-bold text-4xl font-mono">

@@ -1,3 +1,5 @@
+import Picture1 from "../assets/picture1.png";
+import Picture2 from "../assets/picture2.png";
 function About() {
   return (
     <div className="w-full max-w-[53rem] p-6 flex flex-col py-100px md:py-[158px] px-6 md:px-32 items-start gap-[25px] ">
@@ -29,7 +31,7 @@ function About() {
         <div className="absolute top-0 left-[20%] bg-white px-2 pt-2 -rotate-12 shadow-lg rounded-lg overflow-hidden transition-all duration-500 group-hover:-rotate-12 group-hover:-translate-x-4 group-hover:scale-105">
           <div className="w-[200px] h-[200px]">
             <img
-              src="./src/assets/picture1.png "
+              src={Picture1}
               alt="picture1"
               loading="lazy"
               width={200}
@@ -46,7 +48,7 @@ function About() {
         <div className="absolute top-10 right-[20%] bg-white px-2 pt-2 rotate-12 shadow-lg rounded-lg overflow-hidden transition-all duration-500 group-hover:rotate-12 group-hover:translate-x-4 group-hover:scale-105">
           <div className="w-[200px] h-[200px]">
             <img
-              src="./src/assets/picture2.png "
+              src={Picture2}
               alt="picture2"
               loading="lazy"
               width={200}
