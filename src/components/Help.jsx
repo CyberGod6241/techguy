@@ -10,7 +10,28 @@ function Help() {
             Let's turn your vision into something amazing.
           </p>
           <div className="flex gap-6 w-full">
-            <div className="rfm-marquee-container"></div>
+            <div className="relative overflow-hidden w-full ">
+              <div className="rfm-marquee-text flex py-6 gap-6 whitespace-nowrap items-center justify-center transition-all">
+                <span className="text-zinc-50">Web Development &nbsp;</span>
+                <span className="text-zinc-50">UI/UX Design &nbsp;</span>
+                <span className="text-zinc-50">
+                  Mobile App Development &nbsp;
+                </span>
+                <span className="text-zinc-50">Software Consulting &nbsp;</span>
+                <span className="text-zinc-50">
+                  Custom Software Solutions &nbsp;
+                </span>
+                <span className="text-zinc-50">Web Development &nbsp;</span>
+                <span className="text-zinc-50">UI/UX Design &nbsp;</span>
+                <span className="text-zinc-50">
+                  Mobile App Development &nbsp;
+                </span>
+                <span className="text-zinc-50">Software Consulting &nbsp;</span>
+                <span className="text-zinc-50">
+                  Custom Software Solutions &nbsp;
+                </span>
+              </div>
+            </div>
           </div>
         </div>
       </div>

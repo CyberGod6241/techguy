@@ -30,9 +30,11 @@ function Profile() {
         </p>
       </div>
       <div className="flex gap-2.5 items-center">
-        <button className="bg-zinc-950 text-zinc-50 rounded-xl p-4 hover:scale-105 transition-all">
-          Hire Me!
-        </button>
+        <a href="#contact">
+          <button className="bg-zinc-950 text-zinc-50 rounded-xl p-4 hover:scale-105 transition-all">
+            Hire Me!
+          </button>
+        </a>
         <p className="text-green-600 bg-green-600/10 p-4 rounded-xl flex">
           <Dot className="mr-1 font-bold" />i am available for hire
         </p>

@@ -30,7 +30,7 @@ function Experience() {
                     ></path>
                   </svg>
                 </div>
-                <span>Pxxl App</span>
+                <span>Sign-Bridge</span>
               </div>
             </div>
           </div>

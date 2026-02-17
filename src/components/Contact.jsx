@@ -31,7 +31,10 @@ function Contact() {
   };
 
   return (
-    <div className="w-full max-w-[53rem]  p-6 flex flex-col py-[58px] px-[1.5rem] md:px-[8rem] items-center gap-[25px]">
+    <div
+      id="contact"
+      className="w-full max-w-[53rem]  p-6 flex flex-col py-[58px] px-[1.5rem] md:px-[8rem] items-center gap-[25px]"
+    >
       <div
         id="contact-form"
         className="w-full max-w-[53rem] flex flex-col py-[58px] items-start"
