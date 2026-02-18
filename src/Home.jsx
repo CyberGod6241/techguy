@@ -6,6 +6,7 @@ import Experience from "./components/Experience";
 import Contact from "./components/Contact";
 import Help from "./components/Help";
 import Projects from "./components/Projects";
+import Footer from "./components/Footer";
 import item1 from "./assets/item1.png";
 import item2 from "./assets/item2.png";
 import item3 from "./assets/item3.png";
@@ -76,6 +77,7 @@ function Home() {
           <Experience />
           <Help />
           <Contact />
+          <Footer />
         </div>
       </main>
     </>
