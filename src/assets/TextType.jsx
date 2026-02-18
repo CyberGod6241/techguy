@@ -17,8 +17,7 @@ const TextType = ({
   typingSpeed = 50,
   initialDelay = 0,
   pauseDuration = 2000,
-  deletingSpeed = 30,
-  loop = true,
+  loop = false,
   className = "",
   showCursor = true,
   hideCursorWhileTyping = false,
@@ -34,7 +33,7 @@ const TextType = ({
 }) => {
   const [displayedText, setDisplayedText] = useState("");
   const [currentCharIndex, setCurrentCharIndex] = useState(0);
-  const [isDeleting, setIsDeleting] = useState(false);
+  // deletion removed: typing will persist after completion
   const [currentTextIndex, setCurrentTextIndex] = useState(0);
   const [isVisible, setIsVisible] = useState(!startOnVisible);
   const cursorRef = useRef(null);
@@ -97,46 +96,30 @@ const TextType = ({
       : currentText;
 
     const executeTypingAnimation = () => {
-      if (isDeleting) {
-        if (displayedText === "") {
-          setIsDeleting(false);
-          if (currentTextIndex === textArray.length - 1 && !loop) {
-            return;
-          }
+      if (currentCharIndex < processedText.length) {
+        timeout = setTimeout(
+          () => {
+            setDisplayedText((prev) => prev + processedText[currentCharIndex]);
+            setCurrentCharIndex((prev) => prev + 1);
+          },
+          variableSpeed ? getRandomSpeed() : typingSpeed,
+        );
+      } else {
+        if (onSentenceComplete) {
+          onSentenceComplete(textArray[currentTextIndex], currentTextIndex);
+        }
 
-          if (onSentenceComplete) {
-            onSentenceComplete(textArray[currentTextIndex], currentTextIndex);
-          }
+        if (!loop && currentTextIndex === textArray.length - 1) return;
 
+        timeout = setTimeout(() => {
           setCurrentTextIndex((prev) => (prev + 1) % textArray.length);
           setCurrentCharIndex(0);
-          timeout = setTimeout(() => {}, pauseDuration);
-        } else {
-          timeout = setTimeout(() => {
-            setDisplayedText((prev) => prev.slice(0, -1));
-          }, deletingSpeed);
-        }
-      } else {
-        if (currentCharIndex < processedText.length) {
-          timeout = setTimeout(
-            () => {
-              setDisplayedText(
-                (prev) => prev + processedText[currentCharIndex],
-              );
-              setCurrentCharIndex((prev) => prev + 1);
-            },
-            variableSpeed ? getRandomSpeed() : typingSpeed,
-          );
-        } else if (textArray.length >= 1) {
-          if (!loop && currentTextIndex === textArray.length - 1) return;
-          timeout = setTimeout(() => {
-            setIsDeleting(true);
-          }, pauseDuration);
-        }
+          setDisplayedText("");
+        }, pauseDuration);
       }
     };
 
-    if (currentCharIndex === 0 && !isDeleting && displayedText === "") {
+    if (currentCharIndex === 0 && displayedText === "") {
       timeout = setTimeout(executeTypingAnimation, initialDelay);
     } else {
       executeTypingAnimation();
@@ -147,9 +130,7 @@ const TextType = ({
   }, [
     currentCharIndex,
     displayedText,
-    isDeleting,
     typingSpeed,
-    deletingSpeed,
     pauseDuration,
     textArray,
     currentTextIndex,
