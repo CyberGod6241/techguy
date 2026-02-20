@@ -16,15 +16,20 @@ function About() {
           industries.
         </p>
         <p className="text-[16px] font-normal md:tracking-[.01em] md:leading-[1.4em] text-[#5a5a5a]">
-          years of experience in web development, app development, robotics,
-          cloud computing, and game development. I specialize in building robust
-          I'm Naim Abdulazeez, a Nigerian software developer with 6+
-          applications, cloud platforms, and cutting-edge robotics solutions.
+          I’ve spent the last 4 years crafting digital experiences that live at
+          the intersection of design and logic. While my heart belongs to the
+          frontend—building sleek, responsive interfaces with React and Tailwind
+          CSS—I’m no stranger to the server side. I’ve spent enough time with
+          Node.js and Python to ensure that whatever I build isn’t just a pretty
+          face, but a well-oiled machine. I believe in writing clean,
+          maintainable code and building products that users actually enjoy
+          navigating. If it involves JavaScript, high-quality CSS, or solving
+          complex architectural puzzles, I’m in.
         </p>
         <p className="text-[16px] font-normal md:tracking-[.01em] md:leading-[1.4em] text-[#5a5a5a]">
-          A self-taught programmer, ranked among the top programmers in Lagos,
-          Nigeria, I am an active tech content creator, speaker, and mentor
-          passionate about empowering others in tech.
+          I.m Naim Adekunle Abdulazeez, a self-taught programmer, ranked among
+          the top programmers in Lagos, Nigeria, I am an active tech content
+          creator and a speaker passionate about empowering others in tech.
         </p>
       </div>
       <div className="relative w-full h-[250px] mt-8 group">
