@@ -27,7 +27,7 @@ function About() {
           complex architectural puzzles, I’m in.
         </p>
         <p className="text-[16px] font-normal md:tracking-[.01em] md:leading-[1.4em] text-[#5a5a5a]">
-          I.m Naim Adekunle Abdulazeez, a self-taught programmer, ranked among
+          I'm Naim Adekunle Abdulazeez, a self-taught programmer, ranked among
           the top programmers in Lagos, Nigeria, I am an active tech content
           creator and a speaker passionate about empowering others in tech.
         </p>
