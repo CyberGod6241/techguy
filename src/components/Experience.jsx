@@ -67,7 +67,7 @@ function Experience() {
             </div>
             <div class="flex items-center gap-2">
               <div class="text-[16px] text-black md:text-[#5a5a5a] font-medium">
-                Fullstack Developer at
+                Frontend Developer at
               </div>
               <div class="flex items-center gap-1 bg-[#EEF4FF] text-[#3B82F6] px-3 py-1 rounded-md">
                 <div class="w-2 h-2 rounded-full bg-[#3B82F6] flex items-center justify-center">
@@ -92,7 +92,7 @@ function Experience() {
             <div class="text-[#8F8F8F] font-medium text-[13px]">2019-2022</div>
             <div class="flex items-center gap-2">
               <div class="text-[16px] text-black md:text-[#5a5a5a] font-medium">
-                Backend Developer at
+                junior Developer at
               </div>
               <div class="flex items-center gap-1 bg-[#EEF4FF] text-[#3B82F6] px-3 py-1 rounded-md">
                 <div class="w-2 h-2 rounded-full bg-[#3B82F6] flex items-center justify-center">

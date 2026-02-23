@@ -31,7 +31,7 @@ function Profile() {
       </div>
       <div className="flex gap-2.5 items-center">
         <a href="#contact">
-          <button className="bg-zinc-950 text-zinc-50 rounded-xl p-4 hover:scale-105 transition-all">
+          <button className="bg-zinc-950 hover:cursor-pointer text-zinc-50 rounded-xl p-4 hover:scale-105 transition-all">
             Hire Me!
           </button>
         </a>

@@ -55,14 +55,14 @@ function Home() {
       image: item5,
       title: "Sign-Bridge",
       description:
-        "A web application that helps users create and manage digital signatures for documents. The app provides a secure and user-friendly interface for generating, storing, and applying digital signatures to various file types.",
+        "A web platform that creates an opportunity for users to learn sign languages and also provide job opportunities to teachers.",
     },
     {
       id: 6,
       image: item6,
       title: "PixelGuard",
       description:
-        "Image stegabography web application that allows users to hide messages within images. The app provides a simple interface for encoding and decoding hidden messages, ensuring secure communication through visual media.",
+        "Image steganography web application that allows users to hide messages within images. The app provides a simple interface for encoding and decoding hidden messages, ensuring secure communication through visual media.",
     },
   ];
   return (
