@@ -3,6 +3,7 @@ import { House } from "lucide-react";
 import { Github } from "lucide-react";
 import { Facebook } from "lucide-react";
 import XFillIcon from "../assets/Xlogo";
+import resumePdf from "../assets/Naim Abdulazeez.pdf";
 
 function Header() {
   return (
@@ -43,7 +44,7 @@ function Header() {
           <div className="h-5 w-[2px] bg-zinc-600 md:mx-2"></div>
           <div>
             <a
-              href="./src/assets/Naim Abdulazeez.pdf"
+              href={resumePdf}
               download="Naim Abdulazeez.pdf"
               target="_blank"
               rel="noopener noreferrer"
