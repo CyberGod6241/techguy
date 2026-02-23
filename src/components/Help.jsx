@@ -15,21 +15,17 @@ function Help() {
                 <span className="text-zinc-50">Web Development &nbsp;</span>
                 <span className="text-zinc-50">UI/UX Design &nbsp;</span>
                 <span className="text-zinc-50">
-                  Mobile App Development &nbsp;
+                  JavaScript developer &nbsp;
                 </span>
-                <span className="text-zinc-50">Software Consulting &nbsp;</span>
-                <span className="text-zinc-50">
-                  Custom Software Solutions &nbsp;
-                </span>
+                <span className="text-zinc-50">React &nbsp;</span>
+                <span className="text-zinc-50">Tailwind CSS &nbsp;</span>
                 <span className="text-zinc-50">Web Development &nbsp;</span>
                 <span className="text-zinc-50">UI/UX Design &nbsp;</span>
                 <span className="text-zinc-50">
-                  Mobile App Development &nbsp;
+                  JavaScript developer &nbsp;
                 </span>
-                <span className="text-zinc-50">Software Consulting &nbsp;</span>
-                <span className="text-zinc-50">
-                  Custom Software Solutions &nbsp;
-                </span>
+                <span className="text-zinc-50">React &nbsp;</span>
+                <span className="text-zinc-50">Tailwind CSS &nbsp;</span>
               </div>
             </div>
           </div>
