@@ -10,11 +10,11 @@ function Header() {
     <header className="mt-2.5 md:mt-5.5 fixed left-0 right-0 flex justify-center items-center p-4 z-50">
       <div className="border rounded-[20px] border-zinc-200 backdrop-blur-sm bg-zinc-100/10 w-fit max-w-[53rem]">
         <nav className="p-4 flex items-center justify-center gap-6 cursor-pointer">
-          <div className="hover:pr-2.5 hover:bg-zinc-100/10 flex items-center transition-all">
+          <div className="hover:pr-2.5 flex items-center transition-all">
             <House className="opacity-70 scale-90" />
           </div>
           <div className="h-5 w-[2px] bg-zinc-600 md:mx-2"></div>
-          <div className="hover:p-2.5 hover:bg-zinc-100/10 items-center flex transition-all">
+          <div className="hover:p-2.5  items-center flex transition-all">
             <a
               href="https://x.com/TechGuykunle"
               target="_blank"
@@ -23,7 +23,7 @@ function Header() {
               <XFillIcon size={18} opacity={40} />
             </a>
           </div>
-          <div className="hover:p-2.5 hover:bg-zinc-100/10 items-center flex transition-all">
+          <div className="hover:p-2.5  items-center flex transition-all">
             <a
               href="https://github.com/CyberGod6241"
               target="_blank"
@@ -32,7 +32,7 @@ function Header() {
               <Github className="opacity-70 scale-90" />
             </a>
           </div>
-          <div className="hover:p-2.5 hover:bg-zinc-100/10 items-center flex transition-all">
+          <div className="hover:p-2.5 items-center flex transition-all">
             <a
               href="https://facebook.com/TechGuyKunle"
               target="_blank"
