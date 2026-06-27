@@ -18,14 +18,14 @@ import item6 from "./assets/item6.png";
 
 function Home() {
   const items = [
-    {
-      id: 1,
-      image: item1,
-      title: "Ask Your Doctor",
-      link: "https://askyourdoctor.netlify.app/",
-      description:
-        "A health application where doctors and patient can keep track of health details and diagnoses.",
-    },
+    // {
+    //   id: 1,
+    //   image: item1,
+    //   title: "Ask Your Doctor",
+    //   link: "https://askyourdoctor.netlify.app/",
+    //   description:
+    //     "A health application where doctors and patient can keep track of health details and diagnoses.",
+    // },
     {
       id: 2,
       image: item2,
@@ -52,17 +52,19 @@ function Home() {
     },
     {
       id: 5,
-      image: item5,
-      title: "Sign-Bridge",
+      image: item6,
+      title: "PixelGuard",
+      link: "https://pixel-guard.netlify.app/",
       description:
-        "A web platform that creates an opportunity for users to learn sign languages and also provide job opportunities to teachers.",
+        "Image steganography web application that allows users to hide messages within images. The app provides a simple interface for encoding and decoding hidden messages, ensuring secure communication through visual media.",
     },
     {
       id: 6,
-      image: item6,
-      title: "PixelGuard",
+      image: item5,
+      title: "Sign-Bridge",
+      link: "https://sign-bridge.netlify.app/",
       description:
-        "Image steganography web application that allows users to hide messages within images. The app provides a simple interface for encoding and decoding hidden messages, ensuring secure communication through visual media.",
+        "A web platform that creates an opportunity for users to learn sign languages and also provide job opportunities to teachers.",
     },
   ];
   return (
