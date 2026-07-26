@@ -2,10 +2,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCopyright } from "@fortawesome/free-regular-svg-icons";
 import { Github } from "lucide-react";
 import { Facebook } from "lucide-react";
-import { Linkedin } from "lucide-react";
-import { Mail } from "lucide-react";
+// import { mail } from "lucide-react";
 import XFillIcon from "../assets/Xlogo";
-
 function Footer() {
   return (
     <div className="w-full max-w-212 py-[40px] flex flex-col items-center gap-[16px] border-t border-[#E5E5E5]">
@@ -15,7 +13,7 @@ function Footer() {
           icon={faCopyright}
           className="mx-1 text-zinc-900  dark:text-zinc-300"
         />
-        {new Date().getFullYear()} TechGuy.
+        2024 TechGuy.
       </p>
       <div className="flex items-center gap-6">
         <div className=" hover:text-zinc-950 items-center flex transition-all">
@@ -23,7 +21,6 @@ function Footer() {
             href="https://github.com/techguy"
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="GitHub profile"
           >
             <Github className="opacity-70 scale-90" />
           </a>
@@ -33,19 +30,8 @@ function Footer() {
             href="https://x.com/TechGuykunle"
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="X (Twitter) profile"
           >
             <XFillIcon size={18} opacity={40} />
-          </a>
-        </div>
-        <div className=" hover:text-zinc-950 items-center flex transition-all">
-          <a
-            href="https://linkedin.com/in/yourprofile"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="LinkedIn profile"
-          >
-            <Linkedin className="opacity-70 scale-90" />
           </a>
         </div>
         <div className=" items-center flex transition-all">
@@ -53,16 +39,19 @@ function Footer() {
             href="https://facebook.com/TechGuyKunle"
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="Facebook profile"
           >
             <Facebook className="opacity-70 scale-90  hover:text-zinc-950" />
           </a>
         </div>
-        <div className=" items-center flex transition-all">
-          <a href="mailto:abdulazeeznaim@gmail.com" aria-label="Send an email">
-            <Mail className="opacity-70 scale-90  hover:text-zinc-950" />
+        {/* <div className=" items-center flex transition-all">
+          <a
+            href="https://facebook.com/TechGuyKunle"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <mail className="opacity-70 scale-90  hover:text-zinc-950" />
           </a>
-        </div>
+        </div> */}
       </div>
     </div>
   );

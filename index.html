@@ -6,6 +6,14 @@
   <link rel="icon" type="image/svg+xml" href="./src/assets/Picture.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Tech Guy Kunle | Software Engineer</title>
+  <!-- 1. Inline script runs BEFORE React loads to prevent FOUC -->
+  <script>
+    (function () {
+      const isDark = localStorage.theme === 'dark' ||
+        (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches);
+      document.documentElement.classList.toggle('dark', isDark);
+    })();
+  </script>
 </head>
 
 <body>

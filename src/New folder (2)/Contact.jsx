@@ -50,41 +50,29 @@ function Contact() {
         </p>
         <form className="w-full flex flex-col gap-4">
           <div className="grid md:flex gap-4 w-full  dark:text-black">
-            <label htmlFor="contact-name" className="sr-only">
-              Full Name
-            </label>
             <input
-              id="contact-name"
               type="text"
               placeholder="Full Name"
-              required
-              className="flex-1 bg-[#f2f2f2] border-[1px] border-[#0000001a] rounded-[14px] px-[24px] py-[14px] text-[16px] outline-none focus:ring-2 focus:ring-black transition-all"
+              required=""
+              class="flex-1 bg-[#f2f2f2] border-[1px] border-[#0000001a] rounded-[14px] px-[24px] py-[14px] text-[16px] outline-none focus:ring-2 focus:ring-black transition-all"
               name="name"
               value={formData.name}
               onChange={handleChange}
             ></input>
-            <label htmlFor="contact-email" className="sr-only">
-              Email Address
-            </label>
             <input
-              id="contact-email"
               type="email"
               placeholder="Email Address"
-              required
+              required=""
               className="flex-1 bg-[#f2f2f2] border-[1px] border-[#0000001a] rounded-[14px] px-[24px] py-[14px] text-[16px] outline-none focus:ring-2 focus:ring-black transition-all"
               name="email"
               value={formData.email}
               onChange={handleChange}
             ></input>
           </div>
-          <label htmlFor="contact-message" className="sr-only">
-            Message
-          </label>
           <textarea
-            id="contact-message"
             name="message"
             placeholder="Write your Message"
-            required
+            required=""
             value={formData.message}
             onChange={handleChange}
             className="w-full bg-[#f2f2f2] dark:text-black border-[1px] border-[#0000001a] rounded-[14px] px-[24px] py-[14px] text-[16px] h-[150px] outline-none focus:ring-2 focus:ring-black transition-all resize-none"

@@ -2,7 +2,6 @@ import Header from "./components/Header";
 import Liner from "./components/Liner";
 import Profile from "./components/Profile";
 import About from "./components/About";
-import Skills from "./components/Skills";
 import Experience from "./components/Experience";
 import Contact from "./components/Contact";
 import Help from "./components/Help";
@@ -73,11 +72,10 @@ function Home() {
     <>
       <Header />
       <Liner />
-      <main id="top" className="relative flex flex-col mx-auto">
+      <main className="relative flex flex-col mx-auto">
         <div className="relative mx-auto max-w-[53rem] w-full">
           <Profile />
           <About />
-          <Skills />
           <Projects items={items} />
           <Experience />
           <Help />

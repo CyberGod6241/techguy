@@ -25,9 +25,8 @@ function Profile() {
           />
         </p>
         <p className="text-[16px] font-normal md:tracking-[.01em] md:leading-[1.4em] text-[#5a5a5a] dark:text-zinc-300">
-          Frontend Developer building fast, accessible interfaces with React
-          and Tailwind CSS — now going deeper into cybersecurity to build
-          safer products.
+          Creating innovative solutions and captivating designs. University
+          student by day, visionary creator by night.
         </p>
       </div>
       <div className="flex gap-2.5 items-center">
