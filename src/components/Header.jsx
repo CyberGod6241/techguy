@@ -1,10 +1,11 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faXTwitter } from "@fortawesome/free-brands-svg-icons";
 import { House } from "lucide-react";
 import { Github } from "lucide-react";
 import { Facebook } from "lucide-react";
 import { Linkedin } from "lucide-react";
 import XFillIcon from "../assets/Xlogo";
-import resumePdf from "../assets/Naim Abdulazeez.pdf";
+import resumePdf from "../assets/Naim_Abdulazeez_Resume.pdf";
 
 function Header() {
   return (
@@ -26,7 +27,11 @@ function Header() {
               rel="noopener noreferrer"
               aria-label="X (Twitter) profile"
             >
-              <XFillIcon size={18} opacity={40} />
+              {/* <XFillIcon size={18} opacity={40} /> */}
+              <FontAwesomeIcon
+                icon={faXTwitter}
+                className="opacity-70 scale-90"
+              />
             </a>
           </div>
           <div className="hover:p-2.5  items-center flex transition-all">

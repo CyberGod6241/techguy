@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCopyright } from "@fortawesome/free-regular-svg-icons";
+import { faXTwitter } from "@fortawesome/free-brands-svg-icons";
 import { Github } from "lucide-react";
 import { Facebook } from "lucide-react";
 import { Linkedin } from "lucide-react";
@@ -18,7 +19,7 @@ function Footer() {
         {new Date().getFullYear()} TechGuy.
       </p>
       <div className="flex items-center gap-6">
-        <div className=" hover:text-zinc-950 items-center flex transition-all">
+        <div className=" hover:text-zinc-950 items-center flex transition-all dark:hover:text-zinc-300">
           <a
             href="https://github.com/techguy"
             target="_blank"
@@ -28,17 +29,20 @@ function Footer() {
             <Github className="opacity-70 scale-90" />
           </a>
         </div>
-        <div className=" hover:text-zinc-950 items-center flex transition-all">
+        <div className=" hover:text-zinc-950 items-center flex transition-all dark:hover:text-zinc-300">
           <a
             href="https://x.com/TechGuykunle"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="X (Twitter) profile"
           >
-            <XFillIcon size={18} opacity={40} />
+            <FontAwesomeIcon
+              icon={faXTwitter}
+              className="opacity-70 scale-90"
+            />
           </a>
         </div>
-        <div className=" hover:text-zinc-950 items-center flex transition-all">
+        <div className=" hover:text-zinc-950 items-center flex transition-all dark:hover:text-zinc-300">
           <a
             href="https://linkedin.com/in/yourprofile"
             target="_blank"
@@ -55,12 +59,12 @@ function Footer() {
             rel="noopener noreferrer"
             aria-label="Facebook profile"
           >
-            <Facebook className="opacity-70 scale-90  hover:text-zinc-950" />
+            <Facebook className="opacity-70 scale-90  hover:text-zinc-950 dark:hover:text-zinc-300" />
           </a>
         </div>
         <div className=" items-center flex transition-all">
           <a href="mailto:abdulazeeznaim@gmail.com" aria-label="Send an email">
-            <Mail className="opacity-70 scale-90  hover:text-zinc-950" />
+            <Mail className="opacity-70 scale-90  hover:text-zinc-950 dark:hover:text-zinc-300" />
           </a>
         </div>
       </div>
