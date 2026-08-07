@@ -48,7 +48,7 @@ function Home() {
       id: 4,
       image: item4,
       title: "Daily Tracker DEMO",
-      link: "https://dailytracker-cyber.netlify.app/",
+      link: "https://dailytracker-dev.netlify.app/",
       description:
         "A web application that allows users to track their daily activities, set goals, and monitor their progress. The app provides a user-friendly interface for logging tasks, habits, and routines, helping users stay organized and motivated throughout the day.",
     },
