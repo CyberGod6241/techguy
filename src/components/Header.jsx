@@ -11,14 +11,16 @@ function Header() {
   return (
     <header className="mt-2.5 md:mt-5.5 fixed left-0 right-0 flex justify-center items-center p-4 z-50">
       <div className="border rounded-[20px] border-zinc-200 backdrop-blur-sm bg-zinc-100/10 w-fit max-w-[53rem]">
-        <nav className="p-4 flex items-center justify-center gap-6 cursor-pointer">
-          <a
-            href="#top"
-            aria-label="Back to top"
-            className="hover:pr-2.5 flex items-center transition-all"
-          >
-            <House className="opacity-70 scale-90" />
-          </a>
+        <nav className="p-4 flex items-center justify-center gap-4 md:gap-6 cursor-pointer">
+          <div className="hover:p-2.5 items-center flex transition-all">
+            <a
+              href="#top"
+              aria-label="Back to top"
+              className="hover:pr-2.5 flex items-center transition-all"
+            >
+              <House className="opacity-70 scale-60 md:scale-90" />
+            </a>
+          </div>
           <div className="h-5 w-[2px] bg-zinc-600 md:mx-2"></div>
           <div className="hover:p-2.5 items-center flex transition-all">
             <a
@@ -27,10 +29,9 @@ function Header() {
               rel="noopener noreferrer"
               aria-label="X (Twitter) profile"
             >
-              {/* <XFillIcon size={18} opacity={40} /> */}
               <FontAwesomeIcon
                 icon={faXTwitter}
-                className="opacity-70 scale-90"
+                className="opacity-70 text-sm md:text-xl"
               />
             </a>
           </div>
@@ -41,7 +42,7 @@ function Header() {
               rel="noopener noreferrer"
               aria-label="GitHub profile"
             >
-              <Github className="opacity-70 scale-90" />
+              <Github className="opacity-70 scale-60 md:scale-90" />
             </a>
           </div>
           <div className="hover:p-2.5 items-center flex transition-all">
@@ -51,7 +52,7 @@ function Header() {
               rel="noopener noreferrer"
               aria-label="LinkedIn profile"
             >
-              <Linkedin className="opacity-70 scale-90" />
+              <Linkedin className="opacity-70 scale-60 md:scale-90" />
             </a>
           </div>
           <div className="hover:p-2.5 items-center flex transition-all">
@@ -61,7 +62,7 @@ function Header() {
               rel="noopener noreferrer"
               aria-label="Facebook profile"
             >
-              <Facebook className="opacity-70 scale-90" />
+              <Facebook className="opacity-70 scale-60 md:scale-90" />
             </a>
           </div>
           <div className="h-5 w-[2px] bg-zinc-600 md:mx-2"></div>
