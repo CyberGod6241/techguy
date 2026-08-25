@@ -64,7 +64,7 @@ function About() {
             />
           </div>
           <span className="text-xs flex justify-center py-1 pb-3 italic text-black w-full text-center">
-            @Cybergod
+            @TechGuyKunle
           </span>
         </div>
       </div>
