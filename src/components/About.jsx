@@ -1,5 +1,5 @@
-import Picture1 from "../assets/picture1.png";
-import Picture2 from "../assets/picture2.png";
+import Picture1 from "../assets/Picture.jpg";
+import Picture2 from "../assets/picture2.jpg";
 function About() {
   return (
     <div className="w-full max-w-[53rem] p-6 flex flex-col py-100px md:py-[158px] px-6 md:px-32 items-start gap-[25px] ">

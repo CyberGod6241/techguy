@@ -1,6 +1,6 @@
 import { Dot } from "lucide-react";
 import TextType from "../assets/TextType";
-import Picture from "../assets/Picture.png";
+import Picture from "../assets/picture1.png";
 
 function Profile() {
   return (
@@ -25,9 +25,9 @@ function Profile() {
           />
         </p>
         <p className="text-[16px] font-normal md:tracking-[.01em] md:leading-[1.4em] text-[#5a5a5a] dark:text-zinc-300">
-          Frontend Developer building fast, accessible interfaces with React
-          and Tailwind CSS — now going deeper into cybersecurity to build
-          safer products.
+          Frontend Developer building fast, accessible interfaces with React and
+          Tailwind CSS — now going deeper into cybersecurity to build safer
+          products.
         </p>
       </div>
       <div className="flex gap-2.5 items-center">

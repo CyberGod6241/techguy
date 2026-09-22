@@ -11,12 +11,8 @@ function Footer() {
   return (
     <div className="w-full max-w-212 py-[40px] flex flex-col items-center gap-[16px] border-t border-[#E5E5E5]">
       <p className="text-[14px] text-center  text-[#5a5a5a]  dark:text-white">
-        Copyright
-        <FontAwesomeIcon
-          icon={faCopyright}
-          className="mx-1 text-zinc-900  dark:text-zinc-300"
-        />
-        {new Date().getFullYear()} TechGuy.
+        We Build digital products, from saas platforms to web applications,
+        ensure security and better architecture.
       </p>
       <div className="flex items-center gap-6">
         <div className=" hover:text-zinc-950 items-center flex transition-all dark:hover:text-zinc-300">
@@ -68,6 +64,14 @@ function Footer() {
           </a>
         </div>
       </div>
+      <p className="text-[14px] text-center  text-[#5a5a5a]  dark:text-white">
+        Copyright
+        <FontAwesomeIcon
+          icon={faCopyright}
+          className="mx-1 text-zinc-900  dark:text-zinc-300"
+        />
+        {new Date().getFullYear()} TechGuy.
+      </p>
     </div>
   );
 }
